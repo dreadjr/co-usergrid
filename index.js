@@ -13,12 +13,55 @@ function addThunkMethods(obj, methods){
 
 addThunkMethods(usergrid.client, [
   'request',
-  'getEntity'
+  'createGroup',
+  'createEntity',
+  'getEntity',
+  'restoreEntity',
+  'createCollection',
+  'restoreCollection',
+  'getFeedForUser',
+  'createUserActivity',
+  'createUserActivityWithEntity',
+  'signup',
+  'login',
+  'reAuthenticateLite',
+  'reAuthenticate',
+  'loginFacebook',
+  'getLoggedInUser'
 ]);
 
-addThunkMethods(usergrid.entity, ['fetch']);
-addThunkMethods(usergrid.collection, []);
-addThunkMethods(usergrid.group, []);
-addThunkMethods(usergrid.client, []);
+addThunkMethods(usergrid.entity, [
+  'save',
+  'fetch',
+  'destroy',
+  'connect',
+  'getConnections',
+  'getGroups',
+  'getActivities',
+  'getFollowing',
+  'getFollowers',
+  'getRoles',
+  'getPermissions',
+  'disconnect'
+]);
+
+addThunkMethods(usergrid.collection, [
+  'addCollection',
+  'fetch',
+  'addEntity',
+  'destroyEntity',
+  'getEntityByUUID',
+  'getNextPage',
+  'getPreviousPage'
+]);
+
+addThunkMethods(usergrid.group, [
+  'fetch',
+  'members',
+  'add',
+  'remove',
+  'feed',
+  'createGroupActivity'
+]);
 
 module.exports = usergrid;
