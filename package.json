@@ -1,14 +1,14 @@
 {
   "name": "co-usergrid",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha",
   "description": "wrapper to the usergrid library",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --harmony-generators test/*.js -u bdd -R spec"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/dreadjr/co-usergrid.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreadjr/co-usergrid.git"
   },
   "author": "dreadjr",
   "license": "ISC",
@@ -23,6 +23,6 @@
   },
   "engineStrict": true,
   "engines": {
-    "node" : ">=0.11.3"
+    "node": ">=0.11.3"
   }
 }
