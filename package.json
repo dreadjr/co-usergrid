@@ -1,0 +1,20 @@
+{
+  "name": "co-usergrid",
+  "version": "0.0.1",
+  "description": "wrapper to the usergrid library",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --harmony-generators */test.js -u bdd -R spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^3.0.6",
+    "thunkify": "^2.1.1",
+    "usergrid": "^0.10.7"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
+}
