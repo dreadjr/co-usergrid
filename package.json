@@ -4,9 +4,13 @@
   "description": "wrapper to the usergrid library",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --harmony-generators */test.js -u bdd -R spec"
+    "test": "./node_modules/mocha/bin/mocha --harmony-generators test/*.js -u bdd -R spec"
   },
-  "author": "",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/dreadjr/co-usergrid.git"
+  },
+  "author": "dreadjr",
   "license": "ISC",
   "dependencies": {
     "co": "^3.0.6",
